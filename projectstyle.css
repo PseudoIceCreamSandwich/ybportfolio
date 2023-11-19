@@ -1,0 +1,11 @@
+
+#nav a:nth-child(4){
+    text-decoration: none;
+    pointer-events: all
+
+}
+
+#nav a:nth-child(2){
+    text-decoration: line-through 0.2vh;
+    pointer-events: none;
+}
