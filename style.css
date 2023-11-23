@@ -358,8 +358,20 @@ body::-webkit-scrollbar {
 
 
 
+#project-page div p a{
+    transition: all 0.3s;
+}
+
 #project-page div p img{
-    width: 25vw;
+    width: 20vw;
+    opacity: 0;
+    position: absolute;
+    transform: translate(0, -9vh);
+    transition: all 0.3s;
+}
+
+#project-page div p:first-child img{
+    width: 20vw;
     opacity: 0;
     position: absolute;
     transform: translate(0, -9vh);
@@ -371,14 +383,19 @@ body::-webkit-scrollbar {
 
 
 
+
 #project-page div p:hover img{
     opacity: 1;
+    cursor: pointer;
+}
+#project-page div p:hover a{
+    opacity: 0.3;
     cursor: pointer;
 }
 
 
 #project-page div p a{
-    text-decoration: none;
+    text-decoration: wavy underline var(--secondary);
     color: var(--secondary);
     display: flex;
     justify-content: center;
