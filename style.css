@@ -361,12 +361,14 @@ body::-webkit-scrollbar {
 
 
 #project-page div p img{
-    width: 20vw;
+    width: 25vw;
     opacity: 0;
     position: absolute;
-    transform: translate(-15vw, -9vh);
+    transform: translate(0, -9vh);
     transition: all 0.3s;
 }
+
+
 
 
 
@@ -376,17 +378,12 @@ body::-webkit-scrollbar {
     cursor: pointer;
 }
 
-#project-page div p img{
-    transform: translate(-18vw, -9vh);
-}
-
-#project-page div p:first-child img{
-    transform: translate(-15vw, -9vh);
-}
 
 #project-page div p a{
     text-decoration: none;
     color: var(--secondary);
+    display: flex;
+    justify-content: center;
 }
 
 
