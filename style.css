@@ -358,6 +358,10 @@ body::-webkit-scrollbar {
 
 
 
+#project-page div p a{
+    transition: all 0.3s;
+}
+
 #project-page div p img{
     width: 20vw;
     opacity: 0;
@@ -384,10 +388,14 @@ body::-webkit-scrollbar {
     opacity: 1;
     cursor: pointer;
 }
+#project-page div p:hover a{
+    opacity: 0.3;
+    cursor: pointer;
+}
 
 
 #project-page div p a{
-    text-decoration: none;
+    text-decoration: wavy underline var(--secondary);
     color: var(--secondary);
     display: flex;
     justify-content: center;
