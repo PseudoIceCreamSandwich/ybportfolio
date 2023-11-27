@@ -1,9 +1,13 @@
 from pyscript import document
 import joblib
+from pyodide.http import open_url
+from io import BytesIO
+import requests
+url_content = open_url('https://raw.githubusercontent.com/PseudoIceCreamSandwich/ybportfolio/main/House-model.joblib')
 
 
 def translate_english(event):
-    model = joblib.load('./House-model.joblib')
+    model = joblib.load(BytesIO(requests.get('https://raw.githubusercontent.com/PseudoIceCreamSandwich/ybportfolio/main/House-model.joblib').content))
     area = document.getElementById("area")
     beds = document.getElementById("beds")
     baths = document.getElementById("baths")
